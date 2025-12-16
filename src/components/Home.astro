@@ -1,37 +1,49 @@
-<section id="title">
-	<div style="width: 60%">
+<header class="hero">
+	<div class="hero-content">
 		<h1>Smart, simple solutions for local businesses</h1>
+		<p>We help small businesses grow with modern software and consulting.</p>
+		<a href="#contact" class="btn">Contact Us</a>
 	</div>
-	<div>text goes here</div>
-</section>
-<section id="about">
-	<h2>About us</h2>
-	<p>we do stuff such as:</p>
-	<ul>
-		<li>thing one</li>
-		<li>thing two</li>
-	</ul>
-</section>
-
+</header>
 <style is:global>
-	#title {
-		background: var(--background);
+	.hero {
+		min-height: 100vh;
 		display: flex;
 		align-items: center;
-		height: 400px;
-		padding: 100px;
-	
-	}
-	h1 {
-		font-size: 50px;
-		color: #80604f;
-	}
-	h2 {
-		font-size: 30px;
-
-	}
-	#about {
+		justify-content: center;
 		text-align: center;
-		background: #FFBF69
+		background: var(--light);
+		padding: 2rem;
+	}
+	
+	.hero-content {
+		max-width: 900px;
+	}
+	
+	.hero h1 {
+		font-size: clamp(2.5rem, 6vw, 5rem);
+		margin-bottom: 1rem;
+	}
+	
+	.hero p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+	}
+
+	.btn {
+		display: inline-block;
+		background: var(--dark);
+		color: var(--light);
+		padding: 0.75rem 2rem;
+		border-radius: 999px;
+		font-size: 1.25rem;
+		text-decoration: none;
+		transition: background 0.2s ease, transform 0.1s ease;
+	}
+	
+	.btn:hover,
+	.btn:focus-visible {
+		background: #2e221c;
+		transform: translateY(-1px);
 	}
 </style>

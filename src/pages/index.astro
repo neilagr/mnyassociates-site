@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Navbar.astro'
+import About from '../components/About.astro'
 import Footer from '../components/Footer.astro'
 import Home from '../components/Home.astro'
 import Contact from '../components/Contact.astro'
@@ -7,8 +7,10 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout>
-	<Navbar />
 	<Home />
-	<Contact />
+	<main>
+		<About />
+		<Contact />
+	</main>
 	<Footer />
 </Layout>
